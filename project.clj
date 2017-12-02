@@ -1,4 +1,4 @@
-(defproject duct/middleware.buddy "0.1.0-SNAPSHOT"
+(defproject duct/middleware.buddy "0.0.1"
   :description "Duct library for Buddy middleware"
   :url "https://github.com/duct-framework/middleware.buddy"
   :license {:name "Eclipse Public License"
