@@ -1,5 +1,7 @@
 # Duct middleware.buddy
 
+[![Build Status](https://travis-ci.org/duct-framework/middleware.buddy.svg?branch=master)](https://travis-ci.org/duct-framework/middleware.buddy)
+
 A [Duct][] library that provides keys for (some) [Buddy][] middleware.
 
 [duct]:  https://github.com/duct-framework/duct
