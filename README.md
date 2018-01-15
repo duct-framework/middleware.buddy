@@ -15,10 +15,8 @@ To install, add the following to your project `:dependencies`:
 
 ## Usage
 
-This library is currently *very* bare bones. It currently supports only
-basic authentication.
-
-The `:duct.middleware.buddy/authentication` key wraps the
+This library currently only supports a single [Integrant][] key:
+`:duct.middleware.buddy/authentication`. This keyword wraps the
 [buddy.auth.middleware/wrap-authentication][wrap-auth] function. The
 authentication backend is denoted by a keyword on the `:backend` key:
 
@@ -31,7 +29,20 @@ authentication backend is denoted by a keyword on the `:backend` key:
  :example.auth/basic-auth {}}
 ```
 
-[wrap-auth]: https://funcool.github.io/buddy-auth/latest/api/buddy.auth.middleware.html#var-wrap-authentication
+Five backends are supported:
+
+* `:basic`
+* `:session`
+* `:token`
+* `:jws`
+* `:jwe`
+
+These are covered in more detail in the [buddy-auth
+documentation][buddy-auth].
+
+[integrant]:  https://github.com/weavejester/integrant
+[wrap-auth]:  https://funcool.github.io/buddy-auth/latest/api/buddy.auth.middleware.html#var-wrap-authentication
+[buddy-auth]: https://funcool.github.io/buddy-auth/latest/
 
 ## License
 
