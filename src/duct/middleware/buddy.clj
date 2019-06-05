@@ -5,7 +5,7 @@
 
 (def backends
   {:basic   backend/basic
-   :session (fn [_] (backend/session))
+   :session backend/session
    :token   backend/token
    :jws     backend/jws
    :jwe     backend/jwe})
