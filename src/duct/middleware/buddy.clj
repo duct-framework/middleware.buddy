@@ -16,3 +16,10 @@
         config     (dissoc config :backend)]
     (fn [handler]
       (buddy/wrap-authentication handler (backend-fn config)))))
+
+(defmethod ig/init-key :duct.middleware.buddy/authorization
+  [_ {:keys [backend] :as config}]
+  (let [backend-fn (backends backend)
+        config     (dissoc config :backend)]
+    (fn [handler]
+      (buddy/wrap-authorization handler (backend-fn config)))))
