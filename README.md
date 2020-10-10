@@ -11,7 +11,7 @@ A [Duct][] library that provides keys for (some) [Buddy][] middleware.
 
 To install, add the following to your project `:dependencies`:
 
-    [duct/middleware.buddy "0.1.0"]
+    [duct/middleware.buddy "0.2.0"]
 
 ## Usage
 
